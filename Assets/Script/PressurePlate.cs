@@ -4,9 +4,9 @@ public class PressurePlate : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other is player)
+        if(other.tag == "Player")
         {
-            Debug.Log("Player Entered");
+            Debug.Log("Pressure plate triggers");
         }
     }
 }
